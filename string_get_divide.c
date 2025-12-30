@@ -14,7 +14,9 @@ int main(){
     }
     char *word=strtok(str," ");
     while(word!=NULL){
-        printf("%s\n",word);
+        if(strcmp(word,"a")!=0&&strcmp(word,"the")!=0&&strcmp(word,"is")!=0){
+            printf("%s\n",word);
+        }
         word=strtok(NULL," ");
     }
     return 0;
